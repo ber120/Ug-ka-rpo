@@ -186,18 +186,18 @@ photozip = 'https://envs.sh/cD_.jpg'
 
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/ItsUGxBot")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/+wg5NEbdx1SM4YzY1")]])
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/ItsUGBot")        ],
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/+wg5NEbdx1SM4YzY1")        ],
     ]
 )
 
 # Image URLs for the random image feature
 image_urls = [
-    "https://cdn.pixabay.com/photo/2025/05/21/02/38/ai-generated-9612673_1280.jpg",
-    "https://cdn.pixabay.com/photo/2025/05/21/02/38/ai-generated-9612673_1280.jpg",
+    "https://pixabay.com/illustrations/juggle-artist-circus-money-finance-1027844/",
+    "https://pixabay.com/illustrations/juggle-artist-circus-money-finance-1027148/",
     "https://cdn.pixabay.com/photo/2025/05/21/02/38/ai-generated-9612673_1280.jpg",
     # Add more image URLs as needed
 ]
