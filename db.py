@@ -52,7 +52,7 @@ class Database:
                 self.client.server_info()
                 
                 # Initialize database and collections
-                self.db = self.client.get_database('ugdev_db')
+                self.db = self.client.get_database('DATABASE_NAME')
                 self.users = self.db['users']
                 self.settings = self.db['user_settings']
                 
