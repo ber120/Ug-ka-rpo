@@ -186,11 +186,11 @@ photozip = 'https://envs.sh/cD_.jpg'
 
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/+wg5NEbdx1SM4YzY1")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/+C-YxM69MlCE5Yzk1")]])
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/+wg5NEbdx1SM4YzY1")        ],
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/+C-YxM69MlCE5Yzk1")        ],
     ]
 )
 
@@ -316,7 +316,7 @@ async def start(bot: Client, m: Message):
                     photo=photologo,
                     caption="**🔒 Access Required**\n\nContact admin to get access.",
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("💫 Get Access", url="https://t.me/ItsUGBot")]
+                        [InlineKeyboardButton("💫 Get Access", url="https://t.me/+C-YxM69MlCE5Yzk1")]
                     ])
                 )
                 return
@@ -336,7 +336,7 @@ async def start(bot: Client, m: Message):
             await m.reply_photo(
                 photo=photologo,
                 caption=f"**👋 Welcome {m.from_user.first_name}!**\n\n{commands_list}",
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📚 Help", url="https://t.me/ItsUGBot")]])
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📚 Help", url="https://t.me/+C-YxM69MlCE5Yzk1")]])
             )
             
     except Exception as e:
@@ -363,7 +363,7 @@ async def unauthorized_handler(client, message: Message):
         "<blockquote>You need to have an active subscription to use this bot.\n"
         "Please contact admin to get premium access.</blockquote>",
         reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton("💫 Get Premium Access", url="https://t.me/ItsUGBot")
+            InlineKeyboardButton("💫 Get Premium Access", url="https://t.me/+C-YxM69MlCE5Yzk1")
         ]])
     )
 
@@ -562,7 +562,7 @@ async def txt_handler(bot: Client, m: Message):
     # Define watermark variable based on input
     global watermark
     if raw_textx == '/d':
-        watermark = "UG"
+        watermark = "🅱︎🅴︎🆁︎🅻︎🅸︎🅽︎"
     else:
         watermark = raw_textx
     
