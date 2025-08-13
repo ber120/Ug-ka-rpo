@@ -20,8 +20,13 @@ PREMIUM_CHANNEL = "https://t.me/+wg5NEbdx1SM4YzY1"
 # Thumbnail Configuration
 THUMBNAILS = list(map(str, os.environ.get("THUMBNAILS", "https://postimg.cc/WtCcmJPx").split()))
 
-# Web Server Configuration
-WEB_SERVER = os.environ.get("WEB_SERVER", "False").lower() == "true"
+# Web Server Configuration (Fixed .lower() error)
+web_server_value = os.environ.get("WEB_SERVER", "False")
+if isinstance(web_server_value, str):
+    WEB_SERVER = web_server_value.lower() == "true"
+else:
+    WEB_SERVER = False
+
 WEBHOOK = True  # Don't change this
 PORT = int(os.environ.get("PORT", 8000))
 
@@ -58,7 +63,3 @@ Please contact the admin @ItsUGBot to get access.</blockquote>""",
 
 <blockquote>Use format: {format}</blockquote>"""
 }
-
-
-
-
