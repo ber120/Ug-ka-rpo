@@ -7,8 +7,12 @@ API_HASH = os.environ.get("API_HASH", "23905191485be2fb424e89d503e9d80c")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
 CREDIT = os.environ.get("CREDIT", "🅱︎🅴︎🆁︎🅻︎🅸︎🅽︎")
+
 # MongoDB Configuration
-MONGO_URL = os.environ.get("MONGO_URL", "")
+MONGO_URL = os.environ.get(
+    "MONGO_URL",
+    "mongodb+srv://ugbot31:ugbot1234@cluster0.n1uexk5.mongodb.net/UGxPRO?retryWrites=true&w=majority&appName=Cluster0"
+)
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "UGxPRO")  # For auth system
 
 # Owner and Admin Configuration
@@ -17,6 +21,7 @@ ADMINS = [int(x) for x in os.environ.get("ADMINS", "5435086550").split()]  # Def
 
 # Channel Configuration
 PREMIUM_CHANNEL = "https://t.me/+wg5NEbdx1SM4YzY1"
+
 # Thumbnail Configuration
 THUMBNAILS = list(map(str, os.environ.get("THUMBNAILS", "https://postimg.cc/WtCcmJPx").split()))
 
